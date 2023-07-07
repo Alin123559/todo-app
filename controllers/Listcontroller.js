@@ -26,7 +26,6 @@ module.exports.deleteList = async(req,res)=>{
 
 }
 
-
 module.exports.updateList=async(req,res)=>{
     const {_id,text} = req.body;
         ListModel

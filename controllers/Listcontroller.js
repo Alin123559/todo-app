@@ -2,12 +2,12 @@ const ListModel = require('../model/ListModel')
 
 module.exports.getList = async (req,res)=>{
     const List = await ListModel.find()
-    res.send(List)
+    
+    res.send(data)
+    
 }
 module.exports.postList = async (req,res)=>{
-
 const {text} = req.body
-
     ListModel
     .create({text})
     .then((data)=>{
